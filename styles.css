@@ -298,22 +298,52 @@ h1 {
 }
 
 .main3 {
-  background-image: url('./images/illustration-laptop-desktop.svg');
-  background-size: 55%;
-  background-repeat: no-repeat;
-  background-position: left center;
-  height: 33rem;
-  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  gap: 5rem;
+  background-color: hsl(0, 0%, 98%);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.main3-wrapper {
-  position: relative;
-  text-align: left;
-  max-width: 32rem;
-  width: 100%;
-  padding-right: 5rem;
-  z-index: 1;
+.main3-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.main3-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.main3-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: left;
+  max-width: 500px;
+}
+
+.main3-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(208, 49%, 24%);
+}
+
+.main3-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(208, 49%, 24%);
+}
+
 
 .intro-text-block {
   position: relative;
