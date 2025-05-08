@@ -14,6 +14,11 @@
   <div class="page-container">
     <header class="header">
       <div class="header-container">
+
+        <button class="hamburger" aria-label="Toggle menu">
+          <img src="./images/icon-hamburger.svg" alt="menu icon">
+        </button>
+        
         <div class="nav-bar">
           <div class="logo-and-main-nav">
             <!-- Logo -->
@@ -25,9 +30,11 @@
             <nav class="main-nav">
               <ul class="nav-list">
 
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="dropdown-toggle">Product
-                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow"></a>
+                  <span class="dropdown-toggle">Product
+                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow">
+                  </span>
                     <ul class="dropdown-menu">
                       <li><a href="#">Overview</a></li>
                       <li><a href="#">Pricing</a></li>
@@ -38,8 +45,9 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a href="#" class="dropdown-toggle">Company
-                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow"></a>
+                  <span class="dropdown-toggle">Company
+                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow">
+                  </span>
                     <ul class="dropdown-menu">
                       <li><a href="#">About</a></li>
                       <li><a href="#">Team</a></li>
@@ -49,23 +57,28 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a href="#" class="dropdown-toggle">Connect
-                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow"></a>
+                  <span class="dropdown-toggle">Connect
+                  <img src="./images/icon-arrow-light.svg" alt="arrow" class="arrow">
+                  </span>
                     <ul class="dropdown-menu">
                       <li><a href="#">Contact</a></li>
                       <li><a href="#">Newsletter</a></li>
                       <li><a href="#">LinkedIn</a></li>
                     </ul>
                 </li>
+
+
+
               </ul>
             </nav>
+            <div class="auth">
+              <a href="#" class="login">Login</a>
+              <a href="#" class="signup">Sign Up</a>
+            </div>
           </div>
           
           <!-- Login / Sign Up -->
-          <div class="auth">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up</a>
-          </div>
+
         </div>
           <!-- Hero Section -->
           <div class="hero">
@@ -96,8 +109,11 @@
         </div>
 
         <div class="main1-img">
-          <img src="./images/illustration-editor-desktop.svg" alt="editor illustration">
-        </div>
+          <picture>
+            <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 768px)">
+            <img src="./images/illustration-editor-desktop.svg" alt="editor illustration">
+          </picture>
+        </div>        
         
           
       </section>
@@ -123,7 +139,10 @@
       <section class="main3">
 
         <div class="main3-img">
-          <img src="./images/illustration-laptop-desktop.svg" alt="laptop illustration">
+          <picture>
+            <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 768px)">
+            <img src="./images/illustration-laptop-desktop.svg" alt="laptop illustration">
+          </picture>
         </div>
 
         <div class="main3-text">
@@ -184,7 +203,7 @@
                 <li><a href="#">LinkedIn</a></li>
               </ul>
           </div>
-          
+
         </div>
 
       </div>
