@@ -338,11 +338,13 @@ h1 {
   align-items: center;
   z-index: 2;
   margin: 2.5rem 2rem 1.5rem 5rem;
+  outline: 2px solid rgb(0, 255, 238);
 }
 
 .main2-img img {
   width: 330px;
   height: auto;
+  outline: 2px solid rgb(0, 142, 142);
 }
 
 .main2-text {
@@ -513,10 +515,12 @@ margin: 0.5rem 0;
       align-items: center;
       background-color: white;
       position: absolute;
-      top: 0.5rem;
-      left: 50%;
+      top: 2.5rem;
+      left: 80%;
       transform: translateX(-50%);
-      width: 85%;
+      min-width: 8.2rem;
+      width: 23%;
+      max-width: 25%;
       padding: 1.5rem 1.2rem 1rem;
       border-radius: 8px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -534,7 +538,7 @@ margin: 0.5rem 0;
     .nav-list {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 70%;
       gap: 1rem;
       align-items: center;
       padding: 0;
@@ -556,6 +560,10 @@ margin: 0.5rem 0;
       margin: 0;
     }
 
+    .spacer {
+      display: none;
+    }
+
     .dropdown-toggle {
       color: hsl(208, 58%, 12%);
       font-weight: 600;
@@ -569,16 +577,8 @@ margin: 0.5rem 0;
       justify-content: center;
     }
 
-.nav-item,
-.dropdown-toggle,
-.dropdown-menu {
-  outline: 1px dashed magenta;
-}
-
-  
     .arrow {
-      filter: brightness(0); /* makes the arrow icon dark on white background */
-      color: tomato;
+      filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(600%) hue-rotate(340deg);
     }
 
     .nav-item.open .arrow {
@@ -629,9 +629,9 @@ margin: 0.5rem 0;
       gap: 1rem;
       align-items: center;
       border-top: 1px solid hsl(240, 13%, 90%);
-      margin-top: 0.5rem;
-      padding-top: 0.5rem;
-      width: 100%;
+      margin-top: 0;
+      padding-top: 0;
+      width: 50%;
     }
     
     .signup {
@@ -741,12 +741,33 @@ margin: 0.5rem 0;
     }
 
     .main2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       padding: 2rem 0;
       margin-top: 4rem 0;
+      outline: 2px solid rgb(0, 255, 0);
     }
 
     .main2-bg {
       position: relative;
+      outline: 2px solid rgb(255, 162, 0);
+    }
+
+    .main2-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      margin: 2.5rem 2rem 1.5rem 5rem;
+      outline: 2px solid rgb(0, 255, 238);
+    }
+
+    .main2-img img {
+      width: 330px;
+      height: auto;
+      outline: 2px solid rgb(0, 142, 142);
     }
     
     .main2-text {
@@ -755,12 +776,16 @@ margin: 0.5rem 0;
       color: white;
       z-index: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items:flex-end;
+      text-align: left;
+      width: 39rem;
       max-width: 40rem;
-      min-width: 300px;
+      min-width: 25rem;
       margin: 1rem 2rem;
+      position: absolute;
+      outline: 2px solid rgb(255, 0, 251);
     }
     
     .main2-text h2 {
@@ -861,6 +886,7 @@ margin: 0.5rem 0;
       left: 28%;
       transform: translateX(-50%);
       z-index: 2;
+      outline: 2px solid rgb(0, 255, 251);
     }
     
 
