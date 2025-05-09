@@ -1,17 +1,19 @@
 const hamburger = document.querySelector('.hamburger');
+const navBar = document.querySelector('.nav-bar');
 const nav = document.querySelector('.main-nav');
 const hamburgerIcon = hamburger.querySelector('img');
 
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('open');
 
-  // Toggle icon
   if (nav.classList.contains('open')) {
     hamburgerIcon.src = './images/icon-close.svg';
   } else {
     hamburgerIcon.src = './images/icon-hamburger.svg';
   }
 });
+
+
 
 document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
@@ -25,5 +27,17 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   
       parentItem.classList.toggle('open');
     });
+  });
+  
+  document.addEventListener('click', function (e) {
+    const isDropdownToggle = e.target.closest('.dropdown-toggle');
+    const isInsideDropdown = e.target.closest('.nav-item');
+  
+    // If click is NOT on a dropdown toggle and NOT inside a dropdown
+    if (!isDropdownToggle && !isInsideDropdown) {
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('open');
+      });
+    }
   });
   
